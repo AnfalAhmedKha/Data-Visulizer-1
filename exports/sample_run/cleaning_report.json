@@ -1,0 +1,20 @@
+{
+  "steps": [
+    "column_names_standardized",
+    "dropped_cols_null>0.6",
+    "duplicates_removed",
+    "types_inferred",
+    "nulls_imputed_auto",
+    "outliers_capped_iqr"
+  ],
+  "shape_before": [
+    2015,
+    14
+  ],
+  "shape_after": [
+    2000,
+    14
+  ],
+  "rows_removed": 15,
+  "cols_removed": 0
+}

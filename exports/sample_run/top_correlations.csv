@@ -1,0 +1,11 @@
+feature_1,feature_2,correlation,abs_corr
+sales,profit,0.763,0.763
+unit_price,sales,0.667,0.667
+quantity,sales,0.647,0.647
+quantity,profit,0.523,0.523
+unit_price,profit,0.514,0.514
+discount,returned,0.232,0.232
+discount,sales,-0.163,0.163
+discount,profit,-0.111,0.111
+customer_rating,returned,-0.11,0.11
+sales,returned,-0.056,0.056

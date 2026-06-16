@@ -1,0 +1,65 @@
+{
+  "rows": 2015,
+  "cols": 14,
+  "missing_total": 262,
+  "missing_by_col": {
+    "order_id": 0,
+    "order_date": 0,
+    "region": 0,
+    "customer_segment": 0,
+    "product_category": 0,
+    "product_name": 41,
+    "quantity": 0,
+    "unit_price": 0,
+    "discount": 40,
+    "shipping_cost": 61,
+    "sales": 0,
+    "profit": 0,
+    "customer_rating": 120,
+    "returned": 0
+  },
+  "missing_pct": {
+    "order_id": 0.0,
+    "order_date": 0.0,
+    "region": 0.0,
+    "customer_segment": 0.0,
+    "product_category": 0.0,
+    "product_name": 2.03,
+    "quantity": 0.0,
+    "unit_price": 0.0,
+    "discount": 1.99,
+    "shipping_cost": 3.03,
+    "sales": 0.0,
+    "profit": 0.0,
+    "customer_rating": 5.96,
+    "returned": 0.0
+  },
+  "duplicate_rows": 15,
+  "dtypes": {
+    "order_id": "int64",
+    "order_date": "str",
+    "region": "str",
+    "customer_segment": "str",
+    "product_category": "str",
+    "product_name": "str",
+    "quantity": "int64",
+    "unit_price": "float64",
+    "discount": "float64",
+    "shipping_cost": "float64",
+    "sales": "float64",
+    "profit": "float64",
+    "customer_rating": "float64",
+    "returned": "int64"
+  },
+  "outliers_iqr": {
+    "unit_price": 51,
+    "shipping_cost": 71,
+    "sales": 78,
+    "profit": 145,
+    "returned": 285
+  },
+  "constant_cols": [],
+  "high_cardinality": [
+    "order_date"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "model_name": "Random Forest",
+  "task": "classification",
+  "metrics": {
+    "accuracy": 0.8625,
+    "precision": 0.8474,
+    "recall": 0.8625,
+    "f1_score": 0.8077
+  },
+  "cv_mean": 0.8034,
+  "cv_std": 0.0093,
+  "feature_importance": {
+    "shipping_cost": 0.1569,
+    "unit_price": 0.1568,
+    "profit": 0.1458,
+    "sales": 0.1454,
+    "discount": 0.1056,
+    "quantity": 0.0813,
+    "customer_rating": 0.0701,
+    "region_South": 0.0226,
+    "customer_segment_Corporate": 0.0221,
+    "region_West": 0.0205,
+    "region_North": 0.0201,
+    "product_category_Technology": 0.0192,
+    "customer_segment_Home Office": 0.0179,
+    "product_category_Office Supplies": 0.0157
+  },
+  "feature_names": [
+    "quantity",
+    "unit_price",
+    "discount",
+    "shipping_cost",
+    "sales",
+    "profit",
+    "customer_rating",
+    "region_North",
+    "region_South",
+    "region_West",
+    "customer_segment_Corporate",
+    "customer_segment_Home Office",
+    "product_category_Office Supplies",
+    "product_category_Technology"
+  ],
+  "trained_at": "2026-06-14T19:15:35.826057"
+}
