@@ -57,86 +57,10 @@ hidden global state. That means:
 
 ## 🚀 Quick start
 
-```bash
-# 1. Install dependencies
-pip install -r requirements.txt
+1- Click on "install and run.bat" it will automatically install all the requirements and will automatically run it.
+2- For AI agent install ollama or use Open AI so the api can put in "dashboard.py" or directly on GUI console.
+3- If you have all the requirements, install just run "RUN_DASHBOARD.bat".
 
-# 2. Run the full pipeline on the sample dataset (no modeling)
-python app.py --input data/retail_sales.csv
-
-# 3. Or launch the interactive dashboard
-streamlit run dashboard.py
-```
-
----
-
-## 🖥️ CLI usage (`app.py`)
-
-```bash
-# Clean + profile a dataset, export cleaned CSV/Excel + EDA charts
-python app.py --input data/retail_sales.csv
-
-# Train a classifier to predict 'returned', save the model, build a PDF report
-python app.py --input data/retail_sales.csv --target returned --report
-
-# Regression target, compare every available model, custom output folder
-python app.py --input data/retail_sales.csv --target profit \
-               --task regression --compare-models \
-               --output-dir exports/profit_run
-
-# Pull data from a database instead of a file
-python app.py --sql-query "SELECT * FROM sales" \
-               --sql-conn "postgresql://user:pass@host/db" --target profit
-```
-
-Every run writes a self-contained folder (default `exports/`) containing:
-
-```
-exports/
-├── validation_report.json     # data-quality report
-├── cleaning_report.json       # steps applied + before/after shape
-├── summary_statistics.csv     # describe() + skew/kurtosis/nulls
-├── top_correlations.csv
-├── cleaned_data.csv / .xlsx
-├── charts/
-│   ├── distributions.png
-│   ├── correlation_heatmap.png
-│   └── box_plot.png
-├── model/                      # only if --target is set
-│   ├── metrics.json
-│   ├── feature_importance.png
-│   ├── confusion_matrix.png    # classification only
-│   ├── model_comparison.csv    # only with --compare-models
-│   └── random_forest.joblib
-└── report.pdf                  # only with --report
-```
-
-Run `python app.py --help` for the full list of options (null-handling
-strategy, outlier capping, test split size, model choice, etc.).
-
----
-
-## 📊 Dashboard (`dashboard.py`)
-
-```bash
-streamlit run dashboard.py
-```
-
-The dashboard mirrors the CLI pipeline as a guided workflow:
-
-1. **Sidebar** — upload a dataset, apply categorical/numeric filters, and
-   set global cleaning/test-split settings.
-2. **KPI bar** — total rows, feature count, missing-value %, duplicate count.
-3. **Data tab** — preview, column info, and a one-click validation report.
-4. **Clean tab** — run the auto-clean pipeline and compare before/after.
-5. **EDA tab** — summary stats, top correlations, and a chart builder
-   (distributions, heatmap, scatter, box, bar, line).
-6. **Model tab** — pick a target + model, train or compare a full
-   leaderboard, view metrics, feature importance, and confusion matrix.
-7. **Export tab** — download CSV/Excel/JSON, chart PNGs, the trained model,
-   and a full PDF report.
-
----
 
 ## 🖼️ Example output
 
