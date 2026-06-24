@@ -61,7 +61,7 @@ hidden global state. That means:
 
 **GUI Interface**
 
-![Distributions](docs/screenshots/distributions.png)
+![GUI](gui.png)
 
 
 ## 🖼️ Example output
