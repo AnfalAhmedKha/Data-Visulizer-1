@@ -58,8 +58,10 @@ hidden global state. That means:
 ## 🚀 Quick start
 
 1- Click on "install and run.bat" it will automatically install all the requirements and will automatically run it.
-2- For AI agent install ollama or use Open AI so the api can put in "dashboard.py" or directly on GUI console.
-3- If you have all the requirements, install just run "RUN_DASHBOARD.bat".
+
+**GUI Interface**
+
+![GUI INterface](Screenshot 2026-06-16 121353.png)
 
 
 ## 🖼️ Example output
