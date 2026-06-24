@@ -1,25 +1,14 @@
 # 🧬 DataSci Studio Pro
+An end-to-end, modular data-science pipeline: load → validate → clean → explore → model → export.
+Available both as a command-line tool for reproducible, automated runs and as an interactive Streamlit dashboard.
 
-**An end-to-end, modular data-science pipeline** — load → validate → clean →
-explore → model → export — available both as a **command-line tool** for
-reproducible/automated runs and as an **interactive Streamlit dashboard**
-for business users.
+Built to demonstrate the full data‑product lifecycle a data scientist is expected to own — ingestion, data quality, exploratory data analysis, modeling, evaluation, visualization, and delivery — not just a single notebook.
 
-Built to demonstrate the full data product lifecycle a data scientist is
-expected to own: ingestion, data quality, EDA, modeling, evaluation,
-visualization, and delivery — not just a single notebook.
+Unlike a one‑off analysis script, this project packages a repeatable pipeline that a non‑technical user can run from a dashboard (upload a file → receive cleaned data, charts, KPIs, a trained model, and a PDF report in minutes) and that an engineer can schedule from the command line (for example: python app.py --input sales.csv --target churn --report) as part of a daily reporting job — cutting manual reporting and ad‑hoc analysis time from hours to minutes.
 
-> **Business framing:** instead of a one-off analysis script, this project
-> packages a repeatable pipeline that a non-technical stakeholder can run
-> from a dashboard (upload a file → get cleaned data, charts, KPIs, a trained
-> model, and a PDF report in minutes) **and** that an engineer can schedule
-> from the command line (`python app.py --input sales.csv --target churn
-> --report`) as part of a daily reporting job — cutting manual reporting
-> and ad-hoc analysis time from hours to minutes.
 
----
 
-## ✨ Features
+✨ Features
 
 | Area | What it does |
 |---|---|
