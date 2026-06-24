@@ -61,7 +61,7 @@ hidden global state. That means:
 
 **GUI Interface**
 
-![GUI INterface](Screenshot 2026-06-16 121353.png)
+![GUI INterface](/Screenshot 2026-06-16 121513.png)
 
 
 ## 🖼️ Example output
